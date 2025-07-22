@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Frontend UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Product Listing</h2>
+
+  <div class="product-list" id="product-list">
+    
+    <div class="product-card">
+      <img src="./wireless-headphone.jpg" alt="Wireless Headphones" class="product-image" width="100" height="150" />
+      <div class="product-info">
+        <h3>Wireless Headphones</h3>
+        <p>$89.99</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./smart-watch.jpg" alt="Smart Watch" class="product-image" width="150" height="150" />
+      <div class="product-info">
+        <h3>Smart Watch</h3>
+        <p>$129.99</p>
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="./Bluetooth Speaker.jpg" alt="Bluetooth Speaker" class="product-image" width="150" height="150" />
+      <div class="product-info">
+        <h3>Bluetooth Speaker</h3>
+        <p>$59.99</p>
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cart">
+    <h4>Cart</h4>
+    <ul id="cart-items"></ul>
+    <strong>Total: $<span id="cart-total">0.00</span></strong>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
